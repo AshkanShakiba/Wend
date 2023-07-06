@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="w3-jumbo"><b>Wend</b></h2>
+    <h4>Insert a Coin to Start!</h4>
+    <a href="{% url 'select' %}" style="text-decoration: none">
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+            <i class="fa fa-dollar"></i> Insert Coin
+        </button>
+    </a>
+{% endblock content %}

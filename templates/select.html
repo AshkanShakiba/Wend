@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="w3-jumbo"><b>Wend</b></h2>
+    <h4>Please Select a Product</h4>
+    {% for product in products %}
+        <a href="{% url 'order' product.id %}" style="text-decoration: none">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-coffee"></i> {{ product.name }}
+            </button>
+        </a>
+    {% endfor %}
+{% endblock content %}
