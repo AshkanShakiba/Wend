@@ -1,0 +1,15 @@
+// dbdiagram.io
+
+Table Product {
+  id integer [primary key]
+  name varchar
+  price integer
+}
+
+Table Order {
+  id integer [primary key]
+  product integer
+  date datetime
+}
+
+Ref: Order.product > Product.id

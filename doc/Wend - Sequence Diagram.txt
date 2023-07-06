@@ -1,0 +1,11 @@
+// sequencediagram.org
+
+title Wend - Sequence Diagram
+
+User->Django App: Insert Coin
+User<--Django App: Show Menu of Products
+User->Django App: Select a Product
+Django App->Payment Validator: Check Validation of Payment
+Django App<--Payment Validator: Response if Payment is Valid or not
+Django App->Database: Save Order Info
+User<--Django App: Deliver Product and Redirect to Home Page

@@ -1,0 +1,1 @@
+import the "Wend - Class Diagram.drawio" file at app.diagrams.net
